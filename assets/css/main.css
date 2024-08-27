@@ -2631,3 +2631,39 @@ input, select, textarea {
 				}
 
 	}
+
+	.item {
+	    margin-bottom: 1em; /* Adjust spacing between items */
+	}
+	
+	.video.fit video,
+	.image.fit img {
+	    width: 100%; /* Make the video/image full-width of its container */
+	    height: auto; /* Maintain aspect ratio */
+	    display: block; /* Ensure it takes full width */
+	}
+	
+	.header h3 {
+	    text-align: center; /* Center align the header text */
+	    margin-top: 0.5em; /* Adjust margin to space header from video/image */
+	}
+	
+	/* Layout styles */
+	.row {
+	    display: flex; /* Ensure that columns align correctly */
+	    flex-wrap: wrap; /* Allow items to wrap if needed */
+	    gap: 1em; /* Add space between columns */
+	}
+	
+	.col-4 {
+	    flex: 1 0 30%; /* Each column takes up approximately one-third of the row */
+	    padding: 0.5em; /* Adjust padding as needed */
+	    box-sizing: border-box; /* Include padding in the element’s total width and height */
+	}
+	
+	/* Responsive design */
+	@media (max-width: 768px) {
+	    .col-4 {
+	        flex: 0 0 100%; /* Stack columns on small screens */
+	    }
+	}
