@@ -2667,3 +2667,37 @@ input, select, textarea {
 	        flex: 0 0 100%; /* Stack columns on small screens */
 	    }
 	}
+
+	.contact-info {
+		display: flex;
+		justify-content: space-around; /* Adjust spacing between items */
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	
+	.contact-info .icon {
+		font-size: 36px; /* Adjust size as needed */
+		text-decoration: none;
+		color: inherit;
+		margin: 0 15px; /* Adjust margin for spacing */
+	}
+	
+	.contact-info .icon .label {
+		display: block;
+		text-align: center;
+		margin-top: 5px; /* Space between icon and text */
+	}
+	
+	.contact-info .icon.fa-envelope {
+		font-size: 28px; /* Example for email icon */
+	}
+	
+	.contact-info .icon.fa-linkedin,
+	.contact-info .icon.fa-github {
+		font-size: 36px; /* Larger size for LinkedIn and GitHub icons */
+	}
+	
+	.contact-info .icon.fa-phone {
+		font-size: 28px; /* Example size for phone icon */
+	}
+	
